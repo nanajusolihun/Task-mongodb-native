@@ -1,8 +1,8 @@
 import { MongoClient } from "mongodb";
+import { DB_URL } from "./env.js";
 
 // Connection URL
-const url = "mongodb+srv://nanajusolihun:UWj1oDHDYiQf1AVG@cluster0.smumckk.mongodb.net/?retryWrites=true&w=majority";
-const connection = new MongoClient(url, {
+const connection = new MongoClient(DB_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
